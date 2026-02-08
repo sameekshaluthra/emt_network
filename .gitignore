@@ -1,0 +1,14 @@
+# keep big stuff out of git
+data/raw/
+results/
+
+# python junk
+__pycache__/
+*.pyc
+.venv/
+.env/
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
