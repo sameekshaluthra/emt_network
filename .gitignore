@@ -12,3 +12,11 @@ __pycache__/
 # OS junk
 .DS_Store
 Thumbs.db
+
+# keep results ignored by default
+results/
+
+# but track final outputs we want to show
+!results/tcga_pcst_subnetwork.tsv
+!results/geo_pcst_subnetwork.tsv
+!results/network_overlap_summary.txt
