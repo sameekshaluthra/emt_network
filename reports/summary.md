@@ -2,7 +2,7 @@
 
 ## Cohorts
 - TCGA BRCA: 1218 samples, 341 genes
-- GEO GSE96058: 3273 samples, 341 genes
+- GEO GSE96058: 3273 samples, 346 genes
 
 ## Correlation (KS vs 76GS)
 - TCGA Pearson r = -0.741; Spearman rho = -0.811
@@ -17,9 +17,9 @@ M         405
 
 GEO:
 emt_group
-E         1092
+E         1091
 Hybrid    1091
-M         1090
+M         1091
 
 ## 
 - results/emt_scores_tcga.csv
