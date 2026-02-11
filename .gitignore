@@ -1,6 +1,14 @@
 # keep big stuff out of git
 data/raw/
-results/
+data/processed/
+
+# ignore results by default
+results/*
+
+# but track final outputs we want to show
+!results/*.tsv
+!results/*.txt
+!results/*.csv
 
 # python junk
 __pycache__/
@@ -12,11 +20,3 @@ __pycache__/
 # OS junk
 .DS_Store
 Thumbs.db
-
-# keep results ignored by default
-results/
-
-# but track final outputs we want to show
-!results/tcga_pcst_subnetwork.tsv
-!results/geo_pcst_subnetwork.tsv
-!results/network_overlap_summary.txt

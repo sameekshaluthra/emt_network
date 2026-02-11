@@ -1,0 +1,18 @@
+BRCA EMT network inference with CORNETO (OmniPath signed+directed)
+
+TCGA:
+- selected_nodes=38
+- selected_edges(PCST)=48
+- induced_edges=87
+
+GEO:
+- selected_nodes=38
+- selected_edges(PCST)=51
+- induced_edges=82
+Shared nodes: 31  (overlap 68.89%)
+
+Shared selected edges (PCST): 35  (overlap 54.69%)
+Shared induced edges: 70  (overlap 70.71%)
+
+Example shared nodes (first 25):
+ASPH, CABP1, CALM1, CALM2, CALM3, CAV1, CNR1, DRD2, EGFR, GABARAP, HOMER1, ITPR1, ITPR3, MARCKS, MX1, PKD2, PRKG1, RNF24, SNF8, STIM1, TRPC1, TRPC3, TRPC4, TRPC5, TRPC6
