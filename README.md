@@ -33,7 +33,7 @@ Run notebooks in order:
 5. `05_...` Generate EMT signature (M vs E logFC) + prepare OmniPath network  
 6. `06_...` CORNETO network inference (PCST) + overlap analysis  
 7. `07_...` Visualization + hub tables + final figures  
-
+8. `08_...` Pathway enrichment (ORA) of core hubs and validation of downstream EMT effectors
 ---
 
 ## EMT scoring results
@@ -139,6 +139,13 @@ From `results/core_top_hubs_selected.tsv`, the highest-degree nodes in the core 
 These nodes are central within the shared network and are useful candidates for follow-up interpretation.
 
 ---
+
+## Pathway annotation and Biological Validation
+
+Over-Representation Analysis (ORA) was performed on the core network hubs using KEGG 2021 and GO Biological Process 2023 databases via `gseapy`. 
+* **Upstream regulators:** Pathway enrichment reveals the core network is heavily driven by **Calcium signaling** and the **Inflammatory mediator regulation of TRP channels**. This suggests calcium flux is a primary regulatory mechanism driving the inferred network.
+* **Downstream effectors (validation):** Raw differential expression confirms that classic mesenchymal transcription factors and structural markers (*VIM*, *SNAI1*, *SNAI2*, *ZEB1*, *TWIST1*) exhibit significant positive logFC in the mesenchymal-like samples. 
+* **Phenotypic state:** The concurrent upregulation of mesenchymal markers alongside *CDH1* (E-cadherin) suggests the presence of an aggressive hybrid Epithelial/Mesenchymal (E/M) state.
 
 ## Notes and limitations
 
